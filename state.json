@@ -1,0 +1,115 @@
+{
+  "nkfx-smc": {
+    "last_status": "healthy",
+    "last_check": "2026-01-06T23:25:02.170241",
+    "down_since": null,
+    "restart_count_today": 0,
+    "restart_count_total": 0
+  },
+  "mt5-bridge-smc": {
+    "last_status": "healthy",
+    "last_check": "2026-01-06T23:25:02.204031",
+    "down_since": null,
+    "restart_count_today": 0,
+    "restart_count_total": 0
+  },
+  "mt5-vnc-smc": {
+    "last_status": "healthy",
+    "last_check": "2026-01-06T23:25:02.267923",
+    "down_since": null,
+    "restart_count_today": 0,
+    "restart_count_total": 0
+  },
+  "nkfx-me": {
+    "last_status": "healthy",
+    "last_check": "2026-01-06T23:25:02.304559",
+    "down_since": null,
+    "restart_count_today": 0,
+    "restart_count_total": 0
+  },
+  "mt5-bridge": {
+    "last_status": "healthy",
+    "last_check": "2026-01-06T23:25:02.337398",
+    "down_since": null,
+    "restart_count_today": 0,
+    "restart_count_total": 0
+  },
+  "mt5-vnc": {
+    "last_status": "healthy",
+    "last_check": "2026-01-06T23:25:02.365346",
+    "down_since": null,
+    "restart_count_today": 0,
+    "restart_count_total": 0
+  },
+  "nkfx-factory": {
+    "last_status": "healthy",
+    "last_check": "2026-01-06T23:25:02.397061",
+    "down_since": null,
+    "restart_count_today": 0,
+    "restart_count_total": 0
+  },
+  "kraken-bot": {
+    "last_status": "healthy",
+    "last_check": "2026-01-06T23:25:02.423377",
+    "down_since": null,
+    "restart_count_today": 0,
+    "restart_count_total": 0
+  },
+  "pancakeswap-bot": {
+    "last_status": "healthy",
+    "last_check": "2026-01-06T23:25:02.450932",
+    "down_since": null,
+    "restart_count_today": 0,
+    "restart_count_total": 0
+  },
+  "nkfx-features": {
+    "last_status": "healthy",
+    "last_check": "2026-01-06T23:25:02.484049",
+    "down_since": null,
+    "restart_count_today": 0,
+    "restart_count_total": 0
+  },
+  "nkfx-qdrant": {
+    "last_status": "healthy",
+    "last_check": "2026-01-06T23:25:02.511612",
+    "down_since": null,
+    "restart_count_today": 0,
+    "restart_count_total": 0
+  },
+  "root_n8n_1": {
+    "last_status": "healthy",
+    "last_check": "2026-01-06T23:25:02.535419",
+    "down_since": null,
+    "restart_count_today": 0,
+    "restart_count_total": 0
+  },
+  "redis-calendar": {
+    "last_status": "healthy",
+    "last_check": "2026-01-06T23:25:02.564631",
+    "down_since": null,
+    "restart_count_today": 0,
+    "restart_count_total": 0
+  },
+  "webdis": {
+    "last_status": "healthy",
+    "last_check": "2026-01-06T23:25:02.592280",
+    "down_since": null,
+    "restart_count_today": 0,
+    "restart_count_total": 0
+  },
+  "tesseract-ocr": {
+    "last_status": "healthy",
+    "last_check": "2026-01-06T23:25:02.620148",
+    "down_since": null,
+    "restart_count_today": 0,
+    "restart_count_total": 0
+  },
+  "root_cloudflared_1": {
+    "last_status": "healthy",
+    "last_check": "2026-01-06T23:25:02.644506",
+    "down_since": null,
+    "restart_count_today": 0,
+    "restart_count_total": 0
+  },
+  "last_full_check": "2026-01-06T23:25:02.644523"
+}
