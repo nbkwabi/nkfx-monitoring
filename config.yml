@@ -25,7 +25,7 @@ services:
   - name: "nkfx-smc"
     type: "docker"
     critical: true
-    compose_path: "/root/nkfx/bots/nkfx-smc-bot"
+    compose_path: "/root/trading-stack-smc"
     health_endpoint: null
     description: "SMC Trading Bot"
 
