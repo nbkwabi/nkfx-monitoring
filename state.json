@@ -1,14 +1,14 @@
 {
   "nkfx-smc": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:10:02.187536",
+    "last_check": "2026-01-08T20:50:01.903912",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "mt5-bridge-smc": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:10:01.773028",
+    "last_check": "2026-01-08T20:50:01.591591",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
@@ -22,77 +22,77 @@
   },
   "nkfx-me": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:10:02.144537",
+    "last_check": "2026-01-08T20:50:02.042572",
     "down_since": null,
     "restart_count_today": 1,
     "restart_count_total": 1
   },
   "mt5-bridge": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:10:01.808851",
+    "last_check": "2026-01-08T20:50:01.623658",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "mt5-vnc": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:10:02.315387",
+    "last_check": "2026-01-08T20:50:02.268457",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "nkfx-factory": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:10:01.848841",
+    "last_check": "2026-01-08T20:50:01.691708",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "kraken-bot": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:10:02.285635",
+    "last_check": "2026-01-08T20:50:02.211922",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "pancakeswap-bot": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:10:02.101529",
+    "last_check": "2026-01-08T20:50:01.994102",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "nkfx-features": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:10:01.889704",
+    "last_check": "2026-01-08T20:50:01.766719",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "nkfx-qdrant": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:10:01.945796",
+    "last_check": "2026-01-08T20:50:01.809095",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "root_n8n_1": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:10:01.984402",
+    "last_check": "2026-01-08T20:50:01.844546",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "redis-calendar": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:10:02.251399",
+    "last_check": "2026-01-08T20:50:02.164237",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "webdis": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:10:02.221283",
+    "last_check": "2026-01-08T20:50:02.117587",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
@@ -106,12 +106,12 @@
   },
   "root_cloudflared_1": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:10:02.022347",
+    "last_check": "2026-01-08T20:50:01.869672",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
-  "last_full_check": "2026-01-08T20:10:12.753393",
+  "last_full_check": "2026-01-08T20:50:02.820242",
   "nkfx-test": {
     "last_status": "healthy",
     "last_check": "2026-01-08T20:10:02.063801",
@@ -121,24 +121,24 @@
   },
   "bd1346dd8904_mt5-vnc-smc": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:10:02.341039",
+    "last_check": "2026-01-08T20:50:02.315127",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "metatrader5": {
     "last_status": "down",
-    "last_check": "2026-01-08T20:10:12.710446",
+    "last_check": "2026-01-08T20:50:02.695665",
     "down_since": "2026-01-08T20:10:02.395352",
-    "restart_count_today": 1,
-    "restart_count_total": 1
+    "restart_count_today": 9,
+    "restart_count_total": 9
   },
   "bridge": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:10:12.753377",
+    "last_check": "2026-01-08T20:50:02.820228",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
-  "services_checked": 18
+  "services_checked": 17
 }

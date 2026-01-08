@@ -104,17 +104,19 @@ def discover_containers(patterns: List[str] = None) -> List[dict]:
                 try:
                     with open(compose_path) as f:
                         compose = yaml.safe_load(f)
-                        for service_name in compose.get('services', {}).keys():
-                            if service_name not in seen_names:
+                        for service_name, service_config in compose.get('services', {}).items():
+                            # Use container_name if specified, otherwise service_name
+                            container_name = service_config.get('container_name', service_name) if isinstance(service_config, dict) else service_name
+                            if container_name not in seen_names:
                                 discovered.append({
-                                    'name': service_name,
+                                    'name': container_name,
                                     'type': 'docker',
-                                    'critical': True,
+                                    'critical': is_critical_container(container_name),
                                     'compose_path': bot_path,
                                     'auto_discovered': True,
                                     'description': f'From compose: {bot_folder}'
                                 })
-                                seen_names.add(service_name)
+                                seen_names.add(container_name)
                 except Exception as e:
                     log.debug(f"Error reading {compose_path}: {e}")
     
@@ -130,17 +132,19 @@ def discover_containers(patterns: List[str] = None) -> List[dict]:
             try:
                 with open(compose_path) as f:
                     compose = yaml.safe_load(f)
-                    for service_name in compose.get('services', {}).keys():
-                        if service_name not in seen_names:
+                    for service_name, service_config in compose.get('services', {}).items():
+                        # Use container_name if specified, otherwise service_name
+                        container_name = service_config.get('container_name', service_name) if isinstance(service_config, dict) else service_name
+                        if container_name not in seen_names:
                             discovered.append({
-                                'name': service_name,
+                                'name': container_name,
                                 'type': 'docker',
-                                'critical': is_critical_container(service_name),
+                                'critical': is_critical_container(container_name),
                                 'compose_path': compose_dir,
                                 'auto_discovered': True,
                                 'description': f'From: {compose_dir}'
                             })
-                            seen_names.add(service_name)
+                            seen_names.add(container_name)
             except Exception as e:
                 log.debug(f"Error reading {compose_path}: {e}")
     
