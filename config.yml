@@ -1,8 +1,9 @@
 # ============================================================
 # NKFX Universal Health Monitor Configuration
 # ============================================================
-# Add new bots/services here - they'll automatically be monitored
-# Last updated: 2026-01-06
+# Auto-discovery enabled - new containers are automatically detected!
+# Manual entries below are for overrides (health endpoints, etc.)
+# Last updated: 2026-01-08
 
 telegram:
   bot_token: "8521469204:AAHOlxYLdy7sb2QvHjdgP1nxNxMyX_0yemY"
@@ -17,18 +18,34 @@ settings:
   daily_summary_hour: 8  # 08:00 UTC
   log_file: "/root/nkfx/logs/health.log"
   state_file: "/root/nkfx/monitoring/state.json"
+  
+  # ============================================================
+  # AUTO-DISCOVERY SETTINGS
+  # ============================================================
+  auto_discovery: true  # Enable container auto-discovery
+  auto_patterns:        # Containers matching these patterns are auto-included
+    - nkfx
+    - mt5
+    - vnc
+    - kraken
+    - pancake
+    - n8n
+    - qdrant
+    - cloudflare
+    - bridge
+    - redis
+    - webdis
+
+# ============================================================
+# MANUAL SERVICE OVERRIDES
+# ============================================================
+# These entries override auto-discovered settings.
+# Use for: health endpoints, compose paths, critical flags
+# If a container is auto-discovered AND listed here, 
+# the manual config takes precedence.
 
 services:
-  # ============================================================
-  # SMC BOT ECOSYSTEM
-  # ============================================================
-  - name: "nkfx-smc"
-    type: "docker"
-    critical: true
-    compose_path: "/root/trading-stack-smc"
-    health_endpoint: null
-    description: "SMC Trading Bot"
-
+  # SMC Bot Ecosystem - with health endpoints
   - name: "mt5-bridge-smc"
     type: "docker"
     critical: true
@@ -36,24 +53,7 @@ services:
     health_endpoint: "http://localhost:5001/health"
     description: "MT5 Bridge for SMC"
 
-  - name: "mt5-vnc-smc"
-    type: "docker"
-    critical: true
-    compose_path: "/root/trading-stack-smc"
-    container_pattern: "mt5-vnc-smc"  # Handles naming variations
-    health_endpoint: null
-    description: "MT5 VNC for SMC"
-
-  # ============================================================
-  # WYCKOFF BOT ECOSYSTEM
-  # ============================================================
-  - name: "nkfx-me"
-    type: "docker"
-    critical: true
-    compose_path: "/root/nkfx/bots/nkfx-wyckoff-bot"
-    health_endpoint: null
-    description: "Wyckoff Trading Bot"
-
+  # Wyckoff Bot Ecosystem
   - name: "mt5-bridge"
     type: "docker"
     critical: true
@@ -61,16 +61,7 @@ services:
     health_endpoint: "http://localhost:5000/health"
     description: "MT5 Bridge for Wyckoff"
 
-  - name: "mt5-vnc"
-    type: "docker"
-    critical: true
-    compose_path: "/root/trading-stack"
-    health_endpoint: null
-    description: "MT5 VNC for Wyckoff"
-
-  # ============================================================
-  # TRADING FACTORY
-  # ============================================================
+  # Trading Factory with health endpoint
   - name: "nkfx-factory"
     type: "docker"
     critical: true
@@ -78,26 +69,7 @@ services:
     health_endpoint: "http://localhost:8000/health"
     description: "NKFX Trading Factory"
 
-  # ============================================================
-  # CRYPTO BOTS
-  # ============================================================
-  - name: "kraken-bot"
-    type: "docker"
-    critical: true
-    compose_path: "/root/nkfx/tools/kraken-tool"
-    health_endpoint: null
-    description: "Kraken DCA Bot"
-
-  - name: "pancakeswap-bot"
-    type: "docker"
-    critical: false
-    compose_path: "/root/nkfx/tools/pancakeswap-tool"
-    health_endpoint: null
-    description: "PancakeSwap Bot"
-
-  # ============================================================
-  # SIGNAL INTELLIGENCE (Feature Extraction)
-  # ============================================================
+  # Signal Intelligence with health endpoints
   - name: "nkfx-features"
     type: "docker"
     critical: false
@@ -112,40 +84,16 @@ services:
     health_endpoint: "http://localhost:6333/readyz"
     description: "Qdrant Vector DB"
 
-  # ============================================================
-  # INFRASTRUCTURE SERVICES
-  # ============================================================
+  # n8n - mark as critical
   - name: "root_n8n_1"
     type: "docker"
     critical: true
     compose_path: "/root"
-    health_endpoint: null
     description: "n8n Automation"
 
-  - name: "redis-calendar"
-    type: "docker"
-    critical: false
-    compose_path: null  # Standalone
-    health_endpoint: null
-    description: "Redis for Calendar"
-
-  - name: "webdis"
-    type: "docker"
-    critical: false
-    compose_path: null
-    health_endpoint: null
-    description: "Webdis Redis HTTP"
-
-  - name: "tesseract-ocr"
-    type: "docker"
-    critical: false
-    compose_path: "/root"
-    health_endpoint: null
-    description: "Tesseract OCR Service"
-
+  # Cloudflare tunnel - critical
   - name: "root_cloudflared_1"
     type: "docker"
     critical: true
     compose_path: "/root"
-    health_endpoint: null
     description: "Cloudflare Tunnel"
