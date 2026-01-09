@@ -1,98 +1,98 @@
 {
   "nkfx-smc": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:50:01.903912",
+    "last_check": "2026-01-09T02:25:02.512748",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "mt5-bridge-smc": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:50:01.591591",
+    "last_check": "2026-01-09T02:25:02.224622",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "mt5-vnc-smc": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:05:01.861852",
+    "last_check": "2026-01-09T02:25:02.696565",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "nkfx-me": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:50:02.042572",
+    "last_check": "2026-01-09T02:25:02.453882",
     "down_since": null,
-    "restart_count_today": 1,
+    "restart_count_today": 0,
     "restart_count_total": 1
   },
   "mt5-bridge": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:50:01.623658",
+    "last_check": "2026-01-09T02:25:02.270094",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "mt5-vnc": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:50:02.268457",
+    "last_check": "2026-01-09T02:25:02.621441",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "nkfx-factory": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:50:01.691708",
+    "last_check": "2026-01-09T02:25:02.304253",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "kraken-bot": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:50:02.211922",
+    "last_check": "2026-01-09T02:25:02.593740",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "pancakeswap-bot": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:50:01.994102",
+    "last_check": "2026-01-09T02:25:02.482883",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "nkfx-features": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:50:01.766719",
+    "last_check": "2026-01-09T02:25:02.338149",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "nkfx-qdrant": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:50:01.809095",
+    "last_check": "2026-01-09T02:25:02.370373",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "root_n8n_1": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:50:01.844546",
+    "last_check": "2026-01-09T02:25:02.395452",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "redis-calendar": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:50:02.164237",
+    "last_check": "2026-01-09T02:25:02.570796",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
   "webdis": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:50:02.117587",
+    "last_check": "2026-01-09T02:25:02.543682",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
@@ -106,12 +106,12 @@
   },
   "root_cloudflared_1": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:50:01.869672",
+    "last_check": "2026-01-09T02:25:02.424682",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
   },
-  "last_full_check": "2026-01-08T20:50:02.820242",
+  "last_full_check": "2026-01-09T02:25:02.696581",
   "nkfx-test": {
     "last_status": "healthy",
     "last_check": "2026-01-08T20:10:02.063801",
@@ -121,7 +121,7 @@
   },
   "bd1346dd8904_mt5-vnc-smc": {
     "last_status": "healthy",
-    "last_check": "2026-01-08T20:50:02.315127",
+    "last_check": "2026-01-09T02:25:02.646015",
     "down_since": null,
     "restart_count_today": 0,
     "restart_count_total": 0
@@ -140,5 +140,5 @@
     "restart_count_today": 0,
     "restart_count_total": 0
   },
-  "services_checked": 17
+  "services_checked": 16
 }
